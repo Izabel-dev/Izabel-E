@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireleaf - Denúncia</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/denuncia.css') }}">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="logo-area">
+            <img src="{{ url_for('static', filename='img/firelife.png') }}" class="logo">
+            <h1 class="titulo">FIRELEAF</h1>
+        </div>
+        <button class="menu">&#9776;</button>
+    </header>
+
+    <nav class="menu-nav">
+        <a href="{{ url_for('home') }}">Início</a>
+        <a href="{{ url_for('denuncia') }}">Denunciar</a>
+        <a href="https://g1.globo.com/">Notícias</a>
+        <a href="#">Informações</a>
+    </nav>
+
+    <section class="denuncia">
+        <h1>Quer fazer uma denúncia?</h1>
+        <p>
+            Você pode <a href="{{ url_for('home') }}">nos enviar uma mensagem</a>
+            ou ligar diretamente para <strong>193</strong>.
+        </p>
+    </section>
+
+    <br>
+
+    <form method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Informações</legend>
+
+            <label>Nome *</label>
+            <input type="text" name="nome" required>
+
+            <label>Local *</label>
+            <input type="text" name="local" required>
+
+            <label>Relato *</label>
+            <textarea name="relato" rows="5" required></textarea>
+
+            <label class="file-label" for="arquivo">Escolher arquivo</label>
+            <input type="file" id="arquivo" name="arquivo" class="file-input">
+
+            <span id="file-name" class="file-name">Nenhum arquivo selecionado</span>
+        </fieldset>
+
+        <button type="submit" class="enviarrelato-btn">Enviar Relato</button>
+    </form>
+
+    <footer class="home-footer">
+        <img src="{{ url_for('static', filename='img/firelife.png') }}" class="Logo-Lateral">
+        <p>🔥 PRESERVAR HOJE PARA EXISTIR AMANHÃ 🔥</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/denuncia.js') }}"></script>
+
+</body>
+
+</html>

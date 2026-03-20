@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fireleaf - Preservar Hoje Para Existir Amanhã</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="left">
+      <div class="logo-area">
+        <img src="{{ url_for('static', filename='img/firelife.png') }}" alt="Fireleaf Logo" class="logo">
+        <h3>FIRELEAF</h3>
+      </div>
+
+      <div class="text-area">
+        <h1>FIRELEAF</h1>
+        <p class="slogan">PRESERVAR HOJE PARA EXISTIR AMANHÃ</p>
+
+        <div class="divider">
+          <span class="orange"></span>
+          <span class="gray"></span>
+        </div>
+
+        <div class="contacts">
+          <div class="contact">
+            <i class="fas fa-phone"></i>
+            <div>
+              <p><strong>Telefone</strong></p>
+              <p>+55 31 283-7648</p>
+            </div>
+          </div>
+
+          <div class="contact">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <p><strong>Whatsapp</strong></p>
+              <p>+55 31 283-7648</p>
+            </div>
+          </div>
+
+          <div class="contact">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <p><strong>Email</strong></p>
+              <p>operacoes@fireleaf.com</p>
+            </div>
+          </div>
+
+          <div class="contact">
+            <i class="fab fa-instagram"></i>
+            <div>
+              <p><strong>Instagram</strong></p>
+              <p>@fireleaf.official</p>
+            </div>
+          </div>
+
+          <div class="contact">
+            <i class="fas fa-globe"></i>
+            <div>
+              <p><strong>Website</strong></p>
+              <p>www.fireleafsite.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="shape"></div>
+      <div class="shape dark"></div>
+      <div class="shape white"></div>
+      <div class="logo-large">
+        <img src="{{ url_for('static', filename='img/firelife.png') }}" alt="Fireleaf Symbol">
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffffc9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8c42;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px #0000003a;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.titulo {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0;
+}
+
+.menu {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ff8c42;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9em;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 5px #0000003a;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.menu-nav.ativo {
+  max-height: 250px;
+}
+
+.menu-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 0;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-nav a:hover {
+  color: #2c2825;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .menu-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+.denuncia {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 2px solid #ff8c42;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+legend {
+  color: #ff8c42;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-top: 15px;
+}
+
+input, textarea {
+  width: 95%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  resize: vertical;
+}
+
+button.enviarrelato-btn {
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button.enviarrelato-btn:hover {
+  background-color: #e67c31;
+}
+
+.home-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff8c42;
+  color: #2c2825;
+  border-radius: 0 0 15px 15px;
+}
+
+.Logo-Lateral {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+}

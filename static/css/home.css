@@ -1,0 +1,82 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffffc9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8c42;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px #0000003a;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.titulo {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.menu {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff8c42;
+  text-align: center;
+}
+
+.menu-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.conteudo-principal {
+  flex: 1;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.mapa {
+  width: 90%;
+  max-width: 350px;
+  border-radius: 15px;
+}
+
+.btn-saiba {
+  background-color: #ff8c42;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.rodape {
+  background-color: #ff8c42;
+  padding: 20px;
+}

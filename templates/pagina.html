@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fireleaf</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/pagina.css') }}">
+</head>
+
+<body>
+  <header class="topo">
+    <div class="logo-area">
+      <img src="{{ url_for('static', filename='img/firelife.png') }}" alt="Logo Fireleaf" class="logo">
+      <h1 class="titulo">FIRELEAF</h1>
+    </div>
+    <button class="menu">&#9776;</button>
+  </header>
+
+  <nav class="menu-nav">
+    <a href="{{ url_for('pagina') }}">Início</a>
+    <a href="{{ url_for('denuncia') }}">Denunciar</a>
+    <a href="https://g1.globo.com/jornal-nacional/noticia/2025/01/22/area-devastada-por-queimadas-aumenta-quase-80percent-no-brasil-em-2024-amazonia-foi-bioma-mais-afetado.ghtml"
+      target="_blank">Notícias</a>
+    <a href="{{ url_for('home') }}">Informações</a>
+  </nav>
+
+  <section class="pokedex-section">
+    <a href="{{ url_for('home') }}" class="btn-pokedex">Ver Pokédex</a>
+  </section>
+
+  <main class="conteudo-principal">
+    <nav class="operacoes">
+      <div class="mapa-container"><br><br><br>
+        <img class="mapa" src="{{ url_for('static', filename='img/favicon.png') }}" alt="Mapa de queimadas">
+        <p class="descricao-mapa">Acompanhamento de queimadas em tempo real via satélite.</p>
+      </div>
+      <a href="https://www.gov.br/pt-br/servicos/obter-dados-de-queimadas" class="btn-saiba" target="_blank">Saiba
+        Mais</a>
+    </nav>
+
+    <section class="faq">
+      <p>Clique nos temas abaixo para saber mais</p>
+      <a href="{{ url_for('denuncia') }}" class="faq-btn">Como posso denunciar?</a>
+      <a href="{{ url_for('home') }}" class="faq-btn">Como saber áreas em risco?</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <nav class="contatos">
+      <div>
+        <p><strong>Telefone:</strong> +55 31 263-7648</p>
+        <p><strong>Email:</strong> <a href="mailto:projetoace@fireleaf.com">projetoace@fireleaf.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/fireleaf.oficial"
+            target="_blank">@fireleaf.oficial</a></p>
+        <p><strong>Website:</strong> <a href="https://www.fireleafsite.com" target="_blank">www.fireleafsite.com</a></p>
+      </div>
+      <div>
+        <p><strong>WhatsApp:</strong> +55 31 263-7648</p>
+      </div>
+    </nav>
+    <img src="{{ url_for('static', filename='img/firelife.png') }}" alt="Logo FireLeaf" class="logo-rodape">
+  </footer>
+  <script src="{{ url_for('static', filename='js/denuncia.js') }}"></script>
+</body>
+
+</html>
